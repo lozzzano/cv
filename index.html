@@ -46,8 +46,8 @@
 
         <h2 class="text-4xl md:text-5xl font-extrabold mb-3">Hola, soy Gael Lozano</h2>
         <p class="text-secundario text-lg max-w-xl mx-auto">
-            No solo escribo código, convierto ideas en experiencias digitales que funcionan.
-            Desarrollo web con visión, estructura y propósito.
+          Combino desarrollo backend y ciencia de datos para crear soluciones digitales que automatizan procesos, analizan información
+          valiosa y resuelven problemas reales. Diseño sistemas que no solo funcionan, también aprenden.
         </p>
         <a href="#contacto"
             class="mt-8 inline-block bg-primario text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition">
@@ -65,9 +65,10 @@
         <div class="max-w-4xl mx-auto text-center">
             <h3 class="text-3xl font-semibold text-acento mb-6" data-aos="fade-up">Sobre mí</h3>
             <p class="text-secundario text-lg" data-aos="fade-up" data-aos-delay="100">
-                Me especializo en transformar ideas en productos digitales funcionales.<br>
-                Domino tecnologías modernas para crear interfaces intuitivas y sistemas sólidos detrás de escena.<br>
-                Más allá del código, me enfoco en que tu proyecto tenga impacto real.
+              Soy desarrollador backend con experiencia en ciencia de datos aplicada.
+              He creado plataformas con Laravel y React para automatizar operaciones y también entrenado modelos de
+              machine learning para analizar datos financieros, predecir comportamientos y generar insights accionables.
+              Mi objetivo es transformar ideas en soluciones digitales con propósito, estructura y análisis inteligente.
             </p>
         </div>
     </section>
@@ -399,23 +400,86 @@
             </div>
         </div>
         </div>
-    </section>  
+    </section>
+    
+    <!-- DIVISIÓN: Ciencia de Datos -->
+    <section id="ciencia-de-datos" class="bg-fondo py-20 px-4" data-aos="fade-in">
+      <div class="max-w-4xl mx-auto">
+        <h3 class="text-3xl font-semibold text-acento mb-12 text-center" data-aos="fade-up">
+          Proyectos en Ciencia de Datos
+        </h3>
+
+        <!-- PROYECTO: Predicción de pagos -->
+        <div class="bg-fondoAlt rounded-xl shadow-lg overflow-hidden transition hover:shadow-xl hover:-translate-y-1 duration-300 mb-10"
+            data-aos="fade-up" data-aos-delay="100">
+          <img src="/images/credito.jpeg" alt="Proyecto Predicción Crédito" class="w-full h-auto object-cover" />
+          <div class="p-5 space-y-3">
+            <h4 class="text-xl font-bold text-primario">Predicción de Pago de Crédito</h4>
+            <p class="text-sm text-secundario">
+              Entrené un modelo de clasificación en un dataset financiero real para predecir si un cliente pagará o no un crédito. Utilicé Scikit-learn, Pandas y SHAP para explicar el impacto de variables como ingresos, historial y ubicación. Incluye análisis exploratorio y evaluación con matriz de confusión y AUC.
+            </p>
+            <div class="flex flex-wrap gap-2 text-xs mt-2">
+              <span class="flex items-center gap-1 bg-fondo text-white px-2 py-1 rounded shadow">
+                <img src="https://cdn.simpleicons.org/python/3776AB" class="w-4 h-4" alt="Python" /> Python
+              </span>
+              <span class="flex items-center gap-1 bg-fondo text-white px-2 py-1 rounded shadow">
+                <img src="https://cdn.simpleicons.org/pandas/150458" class="w-4 h-4" alt="Pandas" /> Pandas
+              </span>
+              <span class="flex items-center gap-1 bg-fondo text-white px-2 py-1 rounded shadow">
+                <img src="https://cdn.simpleicons.org/scikitlearn/F7931E" class="w-4 h-4" alt="Scikit-learn" /> Scikit-learn
+              </span>
+              <span class="flex items-center gap-1 bg-fondo text-white px-2 py-1 rounded shadow">
+                <img src="https://cdn.simpleicons.org/numpy/013243" class="w-4 h-4" alt="NumPy" /> NumPy
+              </span>
+              <span class="flex items-center gap-1 bg-fondo text-white px-2 py-1 rounded shadow">
+                <img src="https://cdn.simpleicons.org/jupyter/F37626" class="w-4 h-4" alt="Jupyter" /> Jupyter
+              </span>
+            </div>
+            <a href="https://github.com/lozzzano/data-science-projects" class="inline-block mt-4 text-sm text-acento font-medium hover:underline">Ver proyecto →</a>
+          </div>
+        </div>
+
+        <!-- PROYECTO: Titanic & Iris -->
+        <div class="bg-fondoAlt rounded-xl shadow-lg overflow-hidden transition hover:shadow-xl hover:-translate-y-1 duration-300"
+            data-aos="fade-up" data-aos-delay="200">
+          <img src="/images/titanic.jpeg" alt="Titanic ML" class="w-full h-auto object-cover" />
+          <div class="p-5 space-y-3">
+            <h4 class="text-xl font-bold text-primario">Modelos Clásicos: Titanic e Iris</h4>
+            <p class="text-sm text-secundario">
+              Implementación de modelos supervisados para clasificación binaria y multiclase usando Scikit-learn. Incluye visualización de variables, validación cruzada, comparación de algoritmos y documentación paso a paso en Jupyter Notebooks.
+            </p>
+            <div class="flex flex-wrap gap-2 text-xs mt-2">
+              <span class="flex items-center gap-1 bg-fondo text-white px-2 py-1 rounded shadow">
+                <img src="https://cdn.simpleicons.org/python/3776AB" class="w-4 h-4" alt="Python" /> Python
+              </span>
+              <span class="flex items-center gap-1 bg-fondo text-white px-2 py-1 rounded shadow">
+                <img src="https://cdn.simpleicons.org/scikitlearn/F7931E" class="w-4 h-4" alt="Scikit-learn" /> Scikit-learn
+              </span>
+              <span class="flex items-center gap-1 bg-fondo text-white px-2 py-1 rounded shadow">
+                <img src="https://cdn.simpleicons.org/jupyter/F37626" class="w-4 h-4" alt="Jupyter" /> Jupyter
+              </span>
+            </div>
+            <a href="https://github.com/lozzzano/data-science-projects" class="inline-block mt-4 text-sm text-acento font-medium hover:underline">Ver proyecto →</a>
+          </div>
+        </div>
+      </div>
+    </section>
       
     <!-- CONTACTO -->
-    <section id="contacto" class="bg-fondo py-16 px-6">
+    <section id="contacto" class="bg-fondoAlt py-16 px-6">
         <div class="max-w-xl mx-auto text-center">
             <h3 class="text-3xl font-semibold text-acento mb-6">¿Trabajamos juntos?</h3>
             <p class="text-secundario text-lg pb-10">
                 ¿Tienes una idea? ¿Un sitio lento? ¿Un sistema que necesita vida?
-                Escríbeme y déjame ayudarte a convertirlo en algo real.
+                ¿Quieres analizar tus datos o construir algo con IA? Escríbeme y lo hacemos posible.
             </p>
             <form action="https://formsubmit.co/gaelalejandro912@gmail.com" method="POST" class="space-y-4 text-left" data-aos="fade down">
               <input type="text" name="nombre" placeholder="Tu nombre"
-                     class="w-full p-3 rounded bg-fondoAlt text-texto placeholder-secundario" required>
+                     class="w-full p-3 rounded bg-fondo text-texto placeholder-secundario" required>
               <input type="email" name="email" placeholder="Tu correo"
-                     class="w-full p-3 rounded bg-fondoAlt text-texto placeholder-secundario" required>
+                     class="w-full p-3 rounded bg-fondo text-texto placeholder-secundario" required>
               <textarea name="mensaje" placeholder="Tu mensaje"
-                        class="w-full p-3 rounded bg-fondoAlt text-texto placeholder-secundario" rows="4" required></textarea>
+                        class="w-full p-3 rounded bg-fondo text-texto placeholder-secundario" rows="4" required></textarea>
             
               <!-- Opcional: desactivar CAPTCHA -->
               <input type="hidden" name="_captcha" value="false">
@@ -432,7 +496,7 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-fondoAlt py-10 text-center text-secundario text-sm">
+    <footer class="bg-fondo py-10 text-center text-secundario text-sm">
         <div class="flex flex-wrap justify-center gap-6 items-center mb-6 text-base">
 
             <!-- LinkedIn -->
