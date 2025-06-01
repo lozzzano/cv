@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        fondo: '#0a0f24',
+                        fondoAlt: '#111827',
+                        primario: '#2563eb',
+                        acento: '#7c3aed',
+                        texto: '#e5e7eb',
+                        secundario: '#9ca3af',
+                    },
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body class="bg-fondo text-texto font-sans">
+
+    <!-- HEADER -->
+    <header class="bg-fondoAlt py-6 px-8 flex justify-between items-center">
+        <nav class="space-x-6 text-sm">
+            <a href="#sobre-mi" class="text-secundario hover:text-primario">About me</a>
+            <a href="#proyectos" class="text-secundario hover:text-primario">Projects</a>
+            <a href="#contacto" class="text-secundario hover:text-primario">Contact me</a>
+        </nav>
+        <div class="text-sm text-secundario">
+          <a href="index.html" class="hover:text-primario mr-4">Español</a>
+          <span class="font-semibold">English</span>
+        </div>
+
+    </header>
+
+    <!-- HERO -->
+    <section class="py-20 px-4 text-center bg-fondoAlt" data-aos="fade-up">
+        <img src="/images/gael.jpeg" alt="me"
+            class="mx-auto aspect-square object-cover rounded-full w-32 mb-6 border-4 border-primario"
+            data-aos="zoom-in">
+
+        <h2 class="text-4xl md:text-5xl font-extrabold mb-3">Hi, I'm Gael Lozano</h2>
+        <p class="text-secundario text-lg max-w-xl mx-auto">
+          Backend developer with real-world experience building customized administrative platforms, reservation systems, payment validation tools, and process automation. 
+          I've worked with companies like Merco and tourism agencies in Monterrey such as Alpek Adventures, designing solutions that connect business logic with modern technology.
+        </p>
+        <a href="#contacto"
+            class="mt-8 inline-block bg-primario text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition">
+            Contact me
+        </a>
+        <a href="/cv.pdf" download
+            class="mt-4 inline-block bg-acento text-white px-6 py-3 rounded-lg font-medium hover:bg-purple-700 transition">
+            <i class="fas fa-file-download mr-2"></i> Download CV
+        </a>
+
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi" class="py-16 px-6 bg-fondo">
+        <div class="max-w-4xl mx-auto text-center">
+            <h3 class="text-3xl font-semibold text-acento mb-6" data-aos="fade-up">About me</h3>
+            <p class="text-secundario text-lg" data-aos="fade-up" data-aos-delay="100">
+              I’m a backend developer with experience building full administrative platforms, online reservation systems, payment order generation, receipt uploads, and process automation. I mainly work with Laravel and MySQL, and I also use React, Alpine.js, and Python for data science.
+
+              I've developed real-world projects for companies like Merco (public site and internal admin system) and Alpek Adventures, a tourism agency based in Monterrey. For them, I built a CRM-style platform that allows clients to register, book tours, choose what to pay and to which bank account, generate their payment order, and upload proof of payment. The system helps administrators review, validate, and assign received payments, as well as generate legal documents and reports in Word and Excel.
+
+              I’ve also worked with machine learning models applied to financial analysis, and developed mobile prototypes using Ionic and Flutter as part of my Software Technology Engineering degree at FIME, UANL.
+
+              I specialize in building solutions that improve efficiency, reduce errors, and enable businesses to scale their digital operations in an organized and secure way.
+            </p>
+
+        </div>
+    </section>
+
+    <section id="tecnologias" class="py-12 px-6 bg-fondoAlt">
+        <h3 class="text-2xl font-semibold text-center text-acento mb-12" data-aos="fade-up">Technologies I Master</h3>
+
+        <div class="flex flex-wrap justify-center gap-5 text-center text-secundario text-sm max-w-5xl mx-auto">
+
+            <!-- HTML -->
+            <div class="flex flex-col items-center" data-aos="zoom-in" data-aos-delay="100">
+                <img src="https://cdn.simpleicons.org/html5/E34F26" class="w-8 h-8 mb-2" alt="HTML" />
+                HTML
+            </div>
+
+            <!-- CSS -->
+            <div class="flex flex-col items-center" data-aos="zoom-in" data-aos-delay="150">
+                <img src="https://cdn.simpleicons.org/css3/1572B6" class="w-8 h-8 mb-2" alt="CSS" />
+                CSS
+            </div>
+
+            <!-- JS -->
+            <div class="flex flex-col items-center" data-aos="zoom-in" data-aos-delay="200">
+                <img src="https://cdn.simpleicons.org/javascript/F7DF1E" class="w-8 h-8 mb-2" alt="JavaScript" />
+                JavaScript
+            </div>
+
+            <!-- React -->
+            <div class="flex flex-col items-center" data-aos="zoom-in" data-aos-delay="250">
+                <img src="https://cdn.simpleicons.org/react/61dafb" class="w-8 h-8 mb-2" alt="React" />
+                React
+            </div>
+
+            <!-- PHP -->
+            <div class="flex flex-col items-center" data-aos="zoom-in" data-aos-delay="300">
+                <img src="https://cdn.simpleicons.org/php/8892be" class="w-8 h-8 mb-2" alt="PHP" />
+                PHP
+            </div>
+
+            <!-- Laravel -->
+            <div class="flex flex-col items-center" data-aos="zoom-in" data-aos-delay="350">
+                <img src="https://cdn.simpleicons.org/laravel/f55247" class="w-8 h-8 mb-2" alt="Laravel" />
+                Laravel
+            </div>
+
+            <!-- MySQL -->
+            <div class="flex flex-col items-center" data-aos="zoom-in" data-aos-delay="400">
+                <img src="https://cdn.simpleicons.org/mysql/4479A1" class="w-8 h-8 mb-2" alt="MySQL" />
+                MySQL
+            </div>
+
+            <!-- Python -->
+            <div class="flex flex-col items-center" data-aos="zoom-in" data-aos-delay="450">
+                <img src="https://cdn.simpleicons.org/python/3776AB" class="w-8 h-8 mb-2" alt="Python" />
+                Python
+            </div>
+
+            <!-- Git -->
+            <div class="flex flex-col items-center" data-aos="zoom-in" data-aos-delay="500">
+                <img src="https://cdn.simpleicons.org/git/F05032" class="w-8 h-8 mb-2" alt="Git" />
+                Git
+            </div>
+
+            <!-- Ionic -->
+            <div class="flex flex-col items-center" data-aos="zoom-in" data-aos-delay="550">
+                <img src="https://cdn.simpleicons.org/ionic/3880FF" class="w-8 h-8 mb-2" alt="Ionic" />
+                Ionic
+            </div>
+
+            <!-- Scikit-learn -->
+            <div class="flex flex-col items-center" data-aos="zoom-in" data-aos-delay="600">
+                <img src="https://cdn.simpleicons.org/scikitlearn/F7931E" class="w-8 h-8 mb-2" alt="Scikit-learn" />
+                Scikit-learn
+            </div>
+
+            <!-- Pandas -->
+            <div class="flex flex-col items-center" data-aos="zoom-in" data-aos-delay="650">
+                <img src="https://cdn.simpleicons.org/pandas/150458" class="w-8 h-8 mb-2" alt="Pandas" />
+                Pandas
+            </div>
+
+            <!-- Numpy -->
+            <div class="flex flex-col items-center" data-aos="zoom-in" data-aos-delay="700">
+                <img src="https://cdn.simpleicons.org/numpy/013243" class="w-8 h-8 mb-2" alt="Numpy" />
+                NumPy
+            </div>
+
+        </div>
+    </section>
+
+    <section id="experiencia" class="py-16 px-6 bg-fondo">
+        <div class="max-w-4xl mx-auto">
+          <h3 class="text-3xl font-semibold text-acento mb-10 text-center" data-aos="fade-up">Work experience</h3>
+      
+          <!-- HYPR Consulting -->
+          <div class="mb-10" data-aos="fade-up" data-aos-delay="100">
+            <h4 class="text-xl font-bold text-primario">Junior Developer – HYPR Consulting</h4>
+            <p class="text-secundario">September 2024 – Present</p>
+            <ul class="list-disc list-inside text-secundario mt-2 text-sm">
+              <li>Developed a complete management system for a tourism company.</li>
+              <li>Automated user, reservation, and event processes, reducing manual work by over 50%.</li>
+              <li>Managed the project end to end, achieving goals and exceeding client expectations.</li>
+            </ul>
+          </div>
+      
+          <!-- Giro Agency -->
+          <div class="mb-10" data-aos="fade-up" data-aos-delay="200">
+            <h4 class="text-xl font-bold text-primario">Junior Developer – Giro Agency</h4>
+            <p class="text-secundario">February 2024 – May 2024</p>
+            <ul class="list-disc list-inside text-secundario mt-2 text-sm">
+              <li>Contributed to the development of Avatch.mx, a sports pool web platform built with Laravel and Vue.</li>
+              <li>Led the development of magallonabogados.mx, a professional and fully functional corporate website.</li>
+              <li>Implemented solutions that improved autonomy and efficiency in administrative systems.</li>
+            </ul>
+          </div>
+                
+          <!-- Agencia Propia -->
+          <div class="mb-10" data-aos="fade-up" data-aos-delay="300">
+            <h4 class="text-xl font-bold text-primario">CEO & Backend Developer – Independent Agency</h4>
+            <p class="text-secundario">Since 2024</p>
+            <ul class="list-disc list-inside text-secundario mt-2 text-sm">
+              <li>Co-founder and backend lead for Merco.mx, a platform for job openings, promotions, and content.</li>
+              <li>Developed core features for future functionalities and corporate landing pages.</li>
+              <li>Focused on scalability, clean architecture, and user experience.</li>
+            </ul>
+          </div>
+
+        </div>
+    </section>      
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="bg-fondoAlt py-20 px-4" data-aos="fade-in">
+        <div class="max-w-6xl mx-auto">
+          <h3 class="text-3xl font-semibold text-acento mb-14 text-center" data-aos="fade-up">Featured Professional Projects</h3>
+      
+          <div class="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      
+            <!-- PROYECTO: ALPEK -->
+            <div class="bg-fondo rounded-xl shadow-lg overflow-hidden transition hover:shadow-xl hover:-translate-y-1 duration-300"
+                 data-aos="fade-up" data-aos-delay="100">
+              <img src="/images/alpek.jpeg" alt="Alpek" class="w-full h-auto object-cover" />
+              <div class="p-5 space-y-3">
+                <h4 class="text-xl font-bold text-primario">AlpekAdventures.mx</h4>
+                <p class="text-sm text-secundario">
+                  Platform for guided tour experiences. Automates bookings, user management, and PDF report generation.
+                </p>
+                <div class="flex flex-wrap gap-2 text-xs mt-2">
+                  <span class="flex items-center gap-1 bg-fondoAlt text-white px-2 py-1 rounded shadow">
+                    <img src="https://cdn.simpleicons.org/laravel/F55247" class="w-4 h-4" alt="Laravel" />
+                    Laravel
+                  </span>
+                  <span class="flex items-center gap-1 bg-fondoAlt text-white px-2 py-1 rounded shadow">
+                    <img src="https://cdn.simpleicons.org/mysql/4479A1" class="w-4 h-4" alt="MySQL" />
+                    MySQL
+                  </span>
+                  <span class="flex items-center gap-1 bg-fondoAlt text-white px-2 py-1 rounded shadow">
+                    <img src="https://cdn.simpleicons.org/php/777BB4" class="w-4 h-4" alt="PHP" />
+                    PHP
+                  </span>
+                  <span class="flex items-center gap-1 bg-fondoAlt text-white px-2 py-1 rounded shadow">
+                    <img src="https://cdn.simpleicons.org/javascript/F7DF1E" class="w-4 h-4" alt="JavaScript" />
+                    JavaScript
+                  </span>
+                </div>
+                <a href="https://alpekadventures.mx/" class="inline-block mt-4 text-sm text-acento font-medium hover:underline">View project →</a>
+              </div>
+            </div>
+      
+            <!-- PROYECTO: MERCO -->
+            <div class="bg-fondo rounded-xl shadow-lg overflow-hidden transition hover:shadow-xl hover:-translate-y-1 duration-300"
+                 data-aos="fade-up" data-aos-delay="200">
+              <img src="/images/merco.jpeg" alt="Merco" class="w-full h-auto object-cover" />
+              <div class="p-5 space-y-3">
+                <h4 class="text-xl font-bold text-primario">Merco.mx</h4>
+                <p class="text-sm text-secundario">
+                  Backend development for job postings, marketing campaigns, landing pages, and dynamic content.
+                </p>
+                <div class="flex flex-wrap gap-2 text-xs mt-2">
+                  <span class="flex items-center gap-1 bg-fondoAlt text-white px-2 py-1 rounded shadow">
+                    <img src="https://cdn.simpleicons.org/laravel/F55247" class="w-4 h-4" alt="Laravel" />
+                    Laravel
+                  </span>
+                  <span class="flex items-center gap-1 bg-fondoAlt text-white px-2 py-1 rounded shadow">
+                    <img src="https://cdn.simpleicons.org/mysql/4479A1" class="w-4 h-4" alt="MySQL" />
+                    MySQL
+                  </span>
+                  <span class="flex items-center gap-1 bg-fondoAlt text-white px-2 py-1 rounded shadow">
+                    <img src="https://cdn.simpleicons.org/php/777BB4" class="w-4 h-4" alt="PHP" />
+                    PHP
+                  </span>
+                  <span class="flex items-center gap-1 bg-fondoAlt text-white px-2 py-1 rounded shadow">
+                    <img src="https://cdn.simpleicons.org/javascript/F7DF1E" class="w-4 h-4" alt="JavaScript" />
+                    JavaScript
+                  </span>
+                </div>
+                <a href="https://merco.mx/" class="inline-block mt-4 text-sm text-acento font-medium hover:underline">View project →</a>
+              </div>
+            </div>
+      
+            <!-- PROYECTO: MAGALLON -->
+            <div class="bg-fondo rounded-xl shadow-lg overflow-hidden transition hover:shadow-xl hover:-translate-y-1 duration-300"
+                 data-aos="fade-up" data-aos-delay="300">
+              <img src="/images/magallon.jpeg" alt="Magallon" class="w-full h-auto object-cover" />
+              <div class="p-5 space-y-3">
+                <h4 class="text-xl font-bold text-primario">magallonabogados.mx</h4>
+                <p class="text-sm text-secundario">
+                  Professional website for a law firm. Clean, functional, and fast design.
+                </p>
+                <div class="flex flex-wrap gap-2 text-xs mt-2">
+                  <span class="flex items-center gap-1 bg-fondoAlt text-white px-2 py-1 rounded shadow">
+                    <img src="https://cdn.simpleicons.org/laravel/F55247" class="w-4 h-4" alt="Laravel" />
+                    Laravel
+                  </span>
+                  <span class="flex items-center gap-1 bg-fondoAlt text-white px-2 py-1 rounded shadow">
+                    <img src="https://cdn.simpleicons.org/mysql/4479A1" class="w-4 h-4" alt="MySQL" />
+                    MySQL
+                  </span>
+                  <span class="flex items-center gap-1 bg-fondoAlt text-white px-2 py-1 rounded shadow">
+                    <img src="https://cdn.simpleicons.org/php/777BB4" class="w-4 h-4" alt="PHP" />
+                    PHP
+                  </span>
+                  <span class="flex items-center gap-1 bg-fondoAlt text-white px-2 py-1 rounded shadow">
+                    <img src="https://cdn.simpleicons.org/javascript/F7DF1E" class="w-4 h-4" alt="JavaScript" />
+                    JavaScript
+                  </span>
+                </div>
+                <a href="https://magallonabogados.com/" class="inline-block mt-4 text-sm text-acento font-medium hover:underline">View project →</a>
+              </div>
+
+            </div>
+      
+            <!-- PROYECTO: AVATCH -->
+            <div class="bg-fondo rounded-xl shadow-lg overflow-hidden transition hover:shadow-xl hover:-translate-y-1 duration-300"
+                 data-aos="fade-up" data-aos-delay="400">
+              <img src="/images/avatch.jpeg" alt="Avatch" class="w-full h-auto object-cover" />
+              <div class="p-5 space-y-3">
+                <h4 class="text-xl font-bold text-primario">Avatch.mx</h4>
+                <p class="text-sm text-secundario">
+                  Contributed to the development of a sports betting pool platform with a dynamic frontend and robust backend.
+                </p>
+                <div class="flex flex-wrap gap-2 text-xs mt-2">
+                  <!-- Laravel -->
+                  <span class="flex items-center gap-1 bg-fondoAlt text-white px-2 py-1 rounded shadow">
+                    <img src="https://cdn.simpleicons.org/laravel/F55247" class="w-4 h-4" alt="Laravel" />
+                    Laravel
+                  </span>
+
+                  <!-- PHP -->
+                  <span class="flex items-center gap-1 bg-fondoAlt text-white px-2 py-1 rounded shadow">
+                    <img src="https://cdn.simpleicons.org/php/777BB4" class="w-4 h-4" alt="PHP" />
+                    PHP
+                  </span>
+
+                  <!-- JavaScript -->
+                  <span class="flex items-center gap-1 bg-fondoAlt text-white px-2 py-1 rounded shadow">
+                    <img src="https://cdn.simpleicons.org/javascript/F7DF1E" class="w-4 h-4" alt="JavaScript" />
+                    JavaScript
+                  </span>
+
+                  <!-- MySQL -->
+                  <span class="flex items-center gap-1 bg-fondoAlt text-white px-2 py-1 rounded shadow">
+                    <img src="https://cdn.simpleicons.org/mysql/4479A1" class="w-4 h-4" alt="MySQL" />
+                    MySQL
+                  </span>
+
+                  <!-- Vue -->
+                  <span class="flex items-center gap-1 bg-fondoAlt text-white px-2 py-1 rounded shadow">
+                    <img src="https://cdn.simpleicons.org/vue.js/4FC08D" class="w-4 h-4" alt="Vue.js" />
+                    Vue
+                  </span>
+                </div>
+
+                <a href="https://avatch.com/" class="inline-block mt-4 text-sm text-acento font-medium hover:underline">View project →</a>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+    </section>
+    
+    <!-- DIVISIÓN: Proyecto Personal -->
+    <section id="proyecto-personal" class="bg-fondoAlt py-20 px-4" data-aos="fade-in">
+    <div class="max-w-4xl mx-auto">
+      <h3 class="text-2xl font-semibold text-acento mb-10 text-center" data-aos="fade-up">
+        Featured Personal Project
+      </h3>
+
+      <div class="bg-fondoAlt rounded-xl shadow-lg overflow-hidden transition hover:shadow-xl hover:-translate-y-1 duration-300"
+        data-aos="fade-up" data-aos-delay="100">
+        <img src="/images/gym.png" alt="Gym Project" class="w-full h-auto object-cover" />
+        <div class="p-5 space-y-3">
+          <h4 class="text-xl font-bold text-primario">Access Control with Facial Recognition</h4>
+          <p class="text-sm text-secundario">
+            Web + mobile project for a gym. Enables access through facial recognition, logs check-ins and check-outs,
+            manages memberships, and sends alerts when a user stays longer than allowed.
+          </p>
+          <div class="flex flex-wrap gap-2 text-xs mt-2">
+            <!-- Laravel -->
+            <span class="flex items-center gap-1 bg-fondo text-white px-2 py-1 rounded shadow">
+              <img src="https://cdn.simpleicons.org/laravel/F55247" class="w-4 h-4" alt="Laravel" />
+              Laravel
+            </span>
+
+            <!-- React -->
+            <span class="flex items-center gap-1 bg-fondo text-white px-2 py-1 rounded shadow">
+              <img src="https://cdn.simpleicons.org/react/61dafb" class="w-4 h-4" alt="React" />
+              React
+            </span>
+
+            <!-- JavaScript -->
+            <span class="flex items-center gap-1 bg-fondo text-white px-2 py-1 rounded shadow">
+              <img src="https://cdn.simpleicons.org/javascript/F7DF1E" class="w-4 h-4" alt="JavaScript" />
+              JavaScript
+            </span>
+
+            <!-- Python -->
+            <span class="flex items-center gap-1 bg-fondo text-white px-2 py-1 rounded shadow">
+              <img src="https://cdn.simpleicons.org/python/3776AB" class="w-4 h-4" alt="Python" />
+              Python
+            </span>
+
+            <!-- MySQL -->
+            <span class="flex items-center gap-1 bg-fondo text-white px-2 py-1 rounded shadow">
+              <img src="https://cdn.simpleicons.org/mysql/4479A1" class="w-4 h-4" alt="MySQL" />
+              MySQL
+            </span>
+          </div>
+
+          <a href="https://github.com/lozzzano/gym" class="inline-block mt-4 text-sm text-acento font-medium hover:underline">View project →</a>
+          <hr>
+          <a href="/Articulo.pdf" download
+            class="mt-4 inline-block bg-acento text-white px-3 py-2 rounded-lg font-medium hover:bg-purple-700 transition">
+            <i class="fas fa-file-pdf mr-2"></i> University Article
+          </a>
+        </div>
+      </div>
+    </div>
+    </section>
+    
+    <!-- DIVISIÓN: Ciencia de Datos -->
+    <section id="ciencia-de-datos" class="bg-fondo py-20 px-4" data-aos="fade-in">
+    <div class="max-w-4xl mx-auto">
+      <h3 class="text-3xl font-semibold text-acento mb-12 text-center" data-aos="fade-up">
+        Data Science Projects
+      </h3>
+
+      <!-- PROJECT: Credit Payment Prediction -->
+      <div class="bg-fondoAlt rounded-xl shadow-lg overflow-hidden transition hover:shadow-xl hover:-translate-y-1 duration-300 mb-10"
+        data-aos="fade-up" data-aos-delay="100">
+        <img src="/images/credito.jpeg" alt="Credit Prediction Project" class="w-full h-auto object-cover" />
+        <div class="p-5 space-y-3">
+          <h4 class="text-xl font-bold text-primario">Credit Payment Prediction</h4>
+          <p class="text-sm text-secundario">
+            Trained a classification model on a real financial dataset to predict whether a client will repay a loan. Used Scikit-learn, Pandas, and SHAP to explain the impact of variables such as income, history, and location. Includes exploratory analysis and evaluation with confusion matrix and AUC.
+          </p>
+          <div class="flex flex-wrap gap-2 text-xs mt-2">
+            <span class="flex items-center gap-1 bg-fondo text-white px-2 py-1 rounded shadow">
+              <img src="https://cdn.simpleicons.org/python/3776AB" class="w-4 h-4" alt="Python" /> Python
+            </span>
+            <span class="flex items-center gap-1 bg-fondo text-white px-2 py-1 rounded shadow">
+              <img src="https://cdn.simpleicons.org/pandas/150458" class="w-4 h-4" alt="Pandas" /> Pandas
+            </span>
+            <span class="flex items-center gap-1 bg-fondo text-white px-2 py-1 rounded shadow">
+              <img src="https://cdn.simpleicons.org/scikitlearn/F7931E" class="w-4 h-4" alt="Scikit-learn" /> Scikit-learn
+            </span>
+            <span class="flex items-center gap-1 bg-fondo text-white px-2 py-1 rounded shadow">
+              <img src="https://cdn.simpleicons.org/numpy/013243" class="w-4 h-4" alt="NumPy" /> NumPy
+            </span>
+            <span class="flex items-center gap-1 bg-fondo text-white px-2 py-1 rounded shadow">
+              <img src="https://cdn.simpleicons.org/jupyter/F37626" class="w-4 h-4" alt="Jupyter" /> Jupyter
+            </span>
+          </div>
+          <a href="https://github.com/lozzzano/data-science-projects" class="inline-block mt-4 text-sm text-acento font-medium hover:underline">View project →</a>
+        </div>
+      </div>
+
+      <!-- PROJECT: Titanic & Iris -->
+      <div class="bg-fondoAlt rounded-xl shadow-lg overflow-hidden transition hover:shadow-xl hover:-translate-y-1 duration-300"
+        data-aos="fade-up" data-aos-delay="200">
+        <img src="/images/titanic.jpeg" alt="Titanic ML Project" class="w-full h-auto object-cover" />
+        <div class="p-5 space-y-3">
+          <h4 class="text-xl font-bold text-primario">Classic Models: Titanic & Iris</h4>
+          <p class="text-sm text-secundario">
+            Implementation of supervised learning models for binary and multiclass classification using Scikit-learn. Includes variable visualization, cross-validation, algorithm comparison, and step-by-step documentation in Jupyter Notebooks.
+          </p>
+          <div class="flex flex-wrap gap-2 text-xs mt-2">
+            <span class="flex items-center gap-1 bg-fondo text-white px-2 py-1 rounded shadow">
+              <img src="https://cdn.simpleicons.org/python/3776AB" class="w-4 h-4" alt="Python" /> Python
+            </span>
+            <span class="flex items-center gap-1 bg-fondo text-white px-2 py-1 rounded shadow">
+              <img src="https://cdn.simpleicons.org/scikitlearn/F7931E" class="w-4 h-4" alt="Scikit-learn" /> Scikit-learn
+            </span>
+            <span class="flex items-center gap-1 bg-fondo text-white px-2 py-1 rounded shadow">
+              <img src="https://cdn.simpleicons.org/jupyter/F37626" class="w-4 h-4" alt="Jupyter" /> Jupyter
+            </span>
+          </div>
+          <a href="https://github.com/lozzzano/data-science-projects" class="inline-block mt-4 text-sm text-acento font-medium hover:underline">View project →</a>
+        </div>
+      </div>
+    </div>
+    </section>
+      
+    <!-- CONTACTO -->
+    <section id="contacto" class="bg-fondoAlt py-16 px-6">
+    <div class="max-w-xl mx-auto text-center">
+      <h3 class="text-3xl font-semibold text-acento mb-6">Shall We Work Together?</h3>
+      <p class="text-secundario text-lg pb-10">
+        Got an idea? A slow website? A system that needs a spark?<br>
+        Want to analyze your data or build something with AI? Send me a message and let’s make it happen.
+      </p>
+      <form action="https://formsubmit.co/gaelalejandro912@gmail.com" method="POST" class="space-y-4 text-left" data-aos="fade down">
+        <input type="text" name="nombre" placeholder="Your name"
+          class="w-full p-3 rounded bg-fondo text-texto placeholder-secundario" required>
+        <input type="email" name="email" placeholder="Your email"
+          class="w-full p-3 rounded bg-fondo text-texto placeholder-secundario" required>
+        <textarea name="mensaje" placeholder="Your message"
+          class="w-full p-3 rounded bg-fondo text-texto placeholder-secundario" rows="4" required></textarea>
+
+        <!-- Optional: disable CAPTCHA -->
+        <input type="hidden" name="_captcha" value="false">
+
+        <!-- Optional: email subject -->
+        <input type="hidden" name="_subject" value="New message from your portfolio form">
+
+        <button type="submit" class="bg-primario hover:bg-blue-700 text-white px-6 py-2 rounded transition w-full">
+          Send Message
+        </button>
+      </form>
+    </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-fondo py-10 text-center text-secundario text-sm">
+        <div class="flex flex-wrap justify-center gap-6 items-center mb-6 text-base">
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/gaelalejandro912/" target="_blank"
+                class="flex items-center gap-2 hover:text-primario transition">
+                <i class="fab fa-linkedin text-[#0A66C2]"></i>
+                linkedin.com/in/<span class="text-white">gaelalejandro912</span>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/lozzzano" target="_blank"
+                class="flex items-center gap-2 hover:text-primario transition">
+                <i class="fab fa-github text-white"></i>
+                github.com/<span class="text-white">lozzzano</span>
+            </a>
+
+            <!-- Gmail -->
+            <a href="mailto:gaelalejandro912@gmail.com" class="flex items-center gap-2 hover:text-primario transition">
+                <i class="fas fa-envelope text-[#EA4335]"></i>
+                <span class="text-white">gaelalejandro912@gmail.com</span>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://instagram.com/gaelalejandrx" target="_blank"
+                class="flex items-center gap-2 hover:text-primario transition">
+                <i class="fab fa-instagram text-[#E4405F]"></i>
+                instagram.com/<span class="text-white">gaelalejandrx</span>
+            </a>
+
+            <a href="/cv.pdf" download
+            class="flex items-center gap-2 hover:text-primario transition">
+                <i class="fas fa-file-download"></i> Descargar CV
+            </a>
+
+
+        </div>
+
+        <p class="text-secundario text-xs">
+            © 2025 Gael Lozano. Built with ♥ and countless lines of code.
+        </p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
